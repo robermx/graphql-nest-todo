@@ -4,6 +4,7 @@ import { ApolloDriver, type ApolloDriverConfig } from '@nestjs/apollo';
 import { GraphQLModule } from '@nestjs/graphql';
 import { ApolloServerPluginLandingPageLocalDefault } from '@apollo/server/plugin/landingPage/default';
 import { HelloWorldModule } from './hello-world/hello-world.module.js';
+import { TodosModule } from './todos/todos.module.js';
 
 @Module({
   imports: [
@@ -14,6 +15,7 @@ import { HelloWorldModule } from './hello-world/hello-world.module.js';
       plugins: [ApolloServerPluginLandingPageLocalDefault()],
     }),
     HelloWorldModule,
+    TodosModule,
   ],
   controllers: [],
   providers: [],

@@ -10,28 +10,34 @@ importers:
     dependencies:
       '@apollo/server':
         specifier: ^5.5.1
-        version: 5.5.1(graphql@17.0.2)(supports-color@7.2.0)
+        version: 5.5.1(graphql@16.14.2)(supports-color@7.2.0)
       '@as-integrations/express5':
         specifier: ^1.1.2
-        version: 1.1.2(@apollo/server@5.5.1(graphql@17.0.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0))
+        version: 1.1.2(@apollo/server@5.5.1(graphql@16.14.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0))
       '@nestjs/apollo':
         specifier: ^14.0.3
-        version: 14.0.3(@apollo/server@5.5.1(graphql@17.0.2)(supports-color@7.2.0))(@as-integrations/express5@1.1.2(@apollo/server@5.5.1(graphql@17.0.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0)))(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(@nestjs/graphql@14.0.3(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(graphql@17.0.2)(reflect-metadata@0.2.2)(typescript@6.0.3))(graphql@17.0.2)
+        version: 14.0.3(@apollo/server@5.5.1(graphql@16.14.2)(supports-color@7.2.0))(@as-integrations/express5@1.1.2(@apollo/server@5.5.1(graphql@16.14.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0)))(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(@nestjs/graphql@14.0.3(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(class-transformer@0.5.1)(class-validator@0.15.1)(graphql@16.14.2)(reflect-metadata@0.2.2)(typescript@6.0.3))(graphql@16.14.2)
       '@nestjs/common':
         specifier: ^12.0.1
-        version: 12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
+        version: 12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
       '@nestjs/core':
         specifier: ^12.0.1
-        version: 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+        version: 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@nestjs/graphql':
         specifier: ^14.0.3
-        version: 14.0.3(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(graphql@17.0.2)(reflect-metadata@0.2.2)(typescript@6.0.3)
+        version: 14.0.3(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(class-transformer@0.5.1)(class-validator@0.15.1)(graphql@16.14.2)(reflect-metadata@0.2.2)(typescript@6.0.3)
       '@nestjs/platform-express':
         specifier: ^12.0.1
-        version: 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(supports-color@7.2.0)
+        version: 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(supports-color@7.2.0)
+      class-transformer:
+        specifier: ^0.5.1
+        version: 0.5.1
+      class-validator:
+        specifier: ^0.15.1
+        version: 0.15.1
       graphql:
-        specifier: ^17.0.2
-        version: 17.0.2
+        specifier: ^16.11.0
+        version: 16.14.2
       reflect-metadata:
         specifier: ^0.2.2
         version: 0.2.2
@@ -50,7 +56,7 @@ importers:
         version: 12.0.6(chokidar@5.0.0)(prettier@3.9.9)(typescript@6.0.3)
       '@nestjs/testing':
         specifier: ^12.0.1
-        version: 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(@nestjs/platform-express@12.1.2)
+        version: 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(@nestjs/platform-express@12.1.2)
       '@types/express':
         specifier: ^5.0.0
         version: 5.0.6
@@ -65,7 +71,7 @@ importers:
         version: 4.1.11(vitest@4.1.11)
       oxlint:
         specifier: ^1.58.0
-        version: 1.86.0(oxlint-tsgolint@7.0.2003)
+        version: 1.87.0(oxlint-tsgolint@7.0.2003)
       oxlint-tsgolint:
         specifier: ^7.0.2001
         version: 7.0.2003
@@ -608,124 +614,124 @@ packages:
     cpu: [x64]
     os: [win32]
 
-  '@oxlint/binding-android-arm-eabi@1.86.0':
-    resolution: {integrity: sha512-63Ozq6yQn79B2UxjSZ9huJmI+3/ZPI7hxAe6TyFh9oQL447KnIMoffOdtog+h4KILbQr61ZRvFPW5gYbAUgpgQ==}
+  '@oxlint/binding-android-arm-eabi@1.87.0':
+    resolution: {integrity: sha512-22tVIHlB9898OYsBKmYB6He1MCSqdTmK1BVWuSNUTVrpS0KWNege+U9uEYqGJ+KatQag0r/oU44i3OOs46z7HQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [android]
 
-  '@oxlint/binding-android-arm64@1.86.0':
-    resolution: {integrity: sha512-JdLGp44phbf/0Du236Dt06yfK6Qw8xhTFeDvHJdjk167r59OfP5+BL31mgMYVnswS8e+j6tFuccSY0QDC/lgCw==}
+  '@oxlint/binding-android-arm64@1.87.0':
+    resolution: {integrity: sha512-JfZQ3MWf74n8ov0DojZpkOduIubYJvZL5tbTMMhDutsal6u1xH1QuNpN+lK+EQwF8AeAfgwTR2fgh5U2br27XA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [android]
 
-  '@oxlint/binding-darwin-arm64@1.86.0':
-    resolution: {integrity: sha512-h+vkOr4ik6KLFCXdtNVEj9xfnXfNUpPoF95QjORdhiSpLqQePzcN81kGHjAgsw1/G7WBWK5KsFKbI2UK8EyzMA==}
+  '@oxlint/binding-darwin-arm64@1.87.0':
+    resolution: {integrity: sha512-rkx6Xvvw93z2GImVOyvbZwAZcoY0Z6MJW177XNsSB+i/CBsH7ANyelTp01VZyIkM3iSXtqKVb4+ptBgPHap5pQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [darwin]
 
-  '@oxlint/binding-darwin-x64@1.86.0':
-    resolution: {integrity: sha512-wbglRuH5eKsp68keTOOeKDHU1astWSRYFsh2bwKQTAPb44rD6kVgzYI1ZrAJRTc6/7PH55ZXFCQx0rQXrj0UdA==}
+  '@oxlint/binding-darwin-x64@1.87.0':
+    resolution: {integrity: sha512-cw5nYw7L/pQ2SgGBgOcg/Qo89llQre3vIc/kuBLhSICzu1r5s8L76H3ug6AIFsD98WpROj8/z5JVzkf4daxHaQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [darwin]
 
-  '@oxlint/binding-freebsd-x64@1.86.0':
-    resolution: {integrity: sha512-yTQ7QSOlNfQsrfbeVweTiegQJLKPjUKgXp/JpGiFzza6Hp29S9LAoH77TM3L0RjK39iQRZB5lk5iq2t241Mfag==}
+  '@oxlint/binding-freebsd-x64@1.87.0':
+    resolution: {integrity: sha512-x/SuznE6loRZK9gz9AS4ZmzNzSu+5KdeoCS+sVHhnrE8HM6AD8UyTjwldQTTqlXGvkwHASgB0NiTNOc3o3PdAg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [freebsd]
 
-  '@oxlint/binding-linux-arm-gnueabihf@1.86.0':
-    resolution: {integrity: sha512-QYJGy0E2Tv8GAayyBIeHFTwQb8u+zrvrOYrifuDGZDr9ad5XsDhiMScpZymhS9fwWjqrgG2ZUwT4vpY0ISqp4Q==}
+  '@oxlint/binding-linux-arm-gnueabihf@1.87.0':
+    resolution: {integrity: sha512-+JEDmCAXiiFmKhAjZhgAOwaHWY6WENOQ5QA+lFuY59tgsUCDOTRi46B+lENK6CWvtxsXpwkZXNOgpjAQcpIpnA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxlint/binding-linux-arm-musleabihf@1.86.0':
-    resolution: {integrity: sha512-oQo83CafLT8p3qh0AGkN0tSUIh5Hm63mfDsoqUmBQUBnSZLNBAbyRaAftfGY5a0cKZ34dG6jAtMYgcY5kZqt5g==}
+  '@oxlint/binding-linux-arm-musleabihf@1.87.0':
+    resolution: {integrity: sha512-/uC9XqXLAC9AHFLNycwmSQEvKqGrOCgU+uXALI7gNW0DG81TJ/3T2eHnKdRvcb5R1gFEfjxDwI4e4zIa29rICQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm]
     os: [linux]
 
-  '@oxlint/binding-linux-arm64-gnu@1.86.0':
-    resolution: {integrity: sha512-EM6wy5c2UM12qPb7iDJDBAZvHyfEJGH6iosFgaFiaRZpirz99//EHcUyD2KAskz07x1TULuiAtsojf4nvWWksw==}
+  '@oxlint/binding-linux-arm64-gnu@1.87.0':
+    resolution: {integrity: sha512-FTRYPsBy/M728vnUv7l+KAwSAa3Qi4BQbhVvy7NYuMTZ0sUa/OWsbMx79HVFw6u/5KWcaYayDsoOiv7xbevzDg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-arm64-musl@1.86.0':
-    resolution: {integrity: sha512-vCiUQb9ZNzZalxYRU4mlZwUqT5f+c7Sk9DwUOplWHtik3Dl4r3DVnUB5tBeRuTAUe6MUVCTylNW7TkkN8J1oTw==}
+  '@oxlint/binding-linux-arm64-musl@1.87.0':
+    resolution: {integrity: sha512-6sC+N7IY0h1egd8SrYUGNN7CUyKJZ4bIZakKa7V7hfinf4jfi8Kq4+klJvFp5DqXcwMn44I5MeBwmJluO1odFg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-linux-ppc64-gnu@1.86.0':
-    resolution: {integrity: sha512-T0AzE89yjTYmOhB/hb6i+rWTpe2mYt+xiguBhs9DEPIJTZ1H8OYqsE4VxJHHw2Wlq8Mztwvp2P8NV87ZOuhPRw==}
+  '@oxlint/binding-linux-ppc64-gnu@1.87.0':
+    resolution: {integrity: sha512-d5Mnn+ICbhoJPi37Ccjy+86T5qfH2+mSTrTMBXNPfB+wqSWOayBBLLIrCXdUy1YssluCVdGkl+DO9w5r5ODmUA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ppc64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-riscv64-gnu@1.86.0':
-    resolution: {integrity: sha512-s49r0K2f5Oc7fJoMUO1WkdhYK5Ob79uYRwWQ/XNoGysaOq3RUGmGUbHSuXiyydTTA+P9xEdDEnnlZVXiaSJhlw==}
+  '@oxlint/binding-linux-riscv64-gnu@1.87.0':
+    resolution: {integrity: sha512-sf5YWuUo1Dx9loqWCgF8P278MycfcD4JHjDC/LV5j11L3Lqa4PFiwCjD6B8kP4AjsgZZkLn3xbpJEtZBaccs4Q==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-riscv64-musl@1.86.0':
-    resolution: {integrity: sha512-JIa2tYR8ayb3nvcMSZzn4O/xTy13S7MHllu7cBD+B5qDQXXSRy/Vwk1aNpiTjZmBJGwKCHOy/NvnY5Xcwg27uQ==}
+  '@oxlint/binding-linux-riscv64-musl@1.87.0':
+    resolution: {integrity: sha512-+aCraYbmK3uU3P0rFojjeaK9pGY6JvBDXh/0CM+gPyWKmNmXmnFe0qj4qj02U4ibFpbd9Pa9CmDvIdjJUd29rA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [riscv64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-linux-s390x-gnu@1.86.0':
-    resolution: {integrity: sha512-XwXMyBsAuWZkhZU74UNcfQKr1CJJAKnS80dZzOnjl6A4fKcf91IjFgidegQugMHA5SN8ulwDXEDV1yPntjXgQQ==}
+  '@oxlint/binding-linux-s390x-gnu@1.87.0':
+    resolution: {integrity: sha512-7rzbZQIljo6VLWVPqUyLa2P/WV3VFsJB4M52R4NCUJn1A50yjtUsHxiMHFL9opEKGFIiTbZ3VQzmtcJOPUq4NQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [s390x]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-x64-gnu@1.86.0':
-    resolution: {integrity: sha512-C1WjukSyMnr66b+w1/tV8RFVv6d9v0MzDf4p9IxVXknqgmTHBgZh1pccN1eHzFr0b9Tbb3OXoPsAAdAuHAQfeA==}
+  '@oxlint/binding-linux-x64-gnu@1.87.0':
+    resolution: {integrity: sha512-Dry46Fa+AXE/xt9J/YriujU1pU9mzfNWHGQwtOYibAFH8HLrKWCi93AhIGnuUMiwn2JbuBkRyz51f50Ly4r4ow==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [glibc]
 
-  '@oxlint/binding-linux-x64-musl@1.86.0':
-    resolution: {integrity: sha512-ap6KLmvC38c6MdYzsIh25cXQupqYvjd37tMNftzrX1DCtkX1Gcf2B+S2B17dD4lKa5c5gJog7DQJyDo82PBKyw==}
+  '@oxlint/binding-linux-x64-musl@1.87.0':
+    resolution: {integrity: sha512-f/HMZez74gJvnRpGz+b5sdGyWrEgRLmFTXg9sNoqjPWogGxYHUhXKTKyMiYsu9rUGR2ciYqL3fk+Ua4JhMJbRA==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [linux]
     libc: [musl]
 
-  '@oxlint/binding-openharmony-arm64@1.86.0':
-    resolution: {integrity: sha512-996Q9w/2GLwNyy5Djs39Jt09aFlr4b7TPhoj7dvo5FHmcyiF68nPz73HNc5UAYKIYeK+M9JzPQ4Wg1r1dXvP6A==}
+  '@oxlint/binding-openharmony-arm64@1.87.0':
+    resolution: {integrity: sha512-lEC6ZfPZm/07JlB7FsOWX9o1RiHlXiBW594LSUGuXmekC8LZmvUPP9XzE2WZcNxJi5cHA/Fw56o02c3JxgMA5g==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [openharmony]
 
-  '@oxlint/binding-win32-arm64-msvc@1.86.0':
-    resolution: {integrity: sha512-9uTCHYTknNkug5+46ViSoUMuOuGWK61D87QnblU6CXaWKJC630Z7dbls61vdHxya/cR2ycQZ6Mm6ckgF6Cag5g==}
+  '@oxlint/binding-win32-arm64-msvc@1.87.0':
+    resolution: {integrity: sha512-afBWKOD36dUiA9AenaiWpCg8xfyUVPYznyAAVXu413brK4RA5UI/Xoc4yfeGIT8G1a44MV+JR7hioryerBDzGQ==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [arm64]
     os: [win32]
 
-  '@oxlint/binding-win32-ia32-msvc@1.86.0':
-    resolution: {integrity: sha512-a47ga7EKVfMU8rO0i1m3mGwfNRj3FhQyt1d/ukO/E9u1HHF3KpR3tyb3VhuJBGEVPF8uR4exSyHUyx7xbE+uxw==}
+  '@oxlint/binding-win32-ia32-msvc@1.87.0':
+    resolution: {integrity: sha512-daptNsEOuru4/nJTxV4DBHNJ5GepzmaBVQf+jjgKQGi9NRlZKik+RFq4hUL7ewsF1pwjKM+SkYaMbF82UwFGnw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [ia32]
     os: [win32]
 
-  '@oxlint/binding-win32-x64-msvc@1.86.0':
-    resolution: {integrity: sha512-az4dzifCRzES1crwu6pDFXzJTIanrdxXFL9TbiJWrx9LKcuacbR83aPvxDA1LKLNswi/RoqitC7Afcflhu3zBQ==}
+  '@oxlint/binding-win32-x64-msvc@1.87.0':
+    resolution: {integrity: sha512-k+m/EShyXE29J/r1fjk0HlAzhN5JhIvj044oSJkXTEkCLrWZQgXb/3r4q5LTw/eaKW/4GuMXG2xmiJs3s5rPNw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     cpu: [x64]
     os: [win32]
@@ -930,6 +936,9 @@ packages:
   '@types/supertest@7.2.1':
     resolution: {integrity: sha512-4CbBvoYVLHL7+yhbYrZET0vsvuyXTC05aRe7dNQkwMzm56auceoy6Yu3K50uZmwfHna1os3CMSgM/3QVkUtPTw==}
 
+  '@types/validator@13.15.10':
+    resolution: {integrity: sha512-T8L6i7wCuyoK8A/ZeLYt1+q0ty3Zb9+qbSSvrIVitzT3YjZqkTZ40IbRsPanlB4h1QB3JVL1SYCdR6ngtFYcuA==}
+
   '@vitest/coverage-v8@4.1.11':
     resolution: {integrity: sha512-8MVGEFnJIcdGjcbfKmeq8z0pZHH0JlVtoVZH9Q/qwUp6wyFnEJUBMrw9DCaj+ra3vShGmhavjalMIhPNxZAUcw==}
     peerDependencies:
@@ -1105,6 +1114,12 @@ packages:
   chokidar@5.0.0:
     resolution: {integrity: sha512-TQMmc3w+5AxjpL8iIiwebF73dRDF4fBIieAqGn9RGCWaEVwQ6Fb2cGe31Yns0RRIzii5goJ1Y7xbMwo1TxMplw==}
     engines: {node: '>= 20.19.0'}
+
+  class-transformer@0.5.1:
+    resolution: {integrity: sha512-SQa1Ws6hUbfC98vKGxZH3KFY0Y1lm5Zm0SY8XX9zbK7FJCyVEac3ATW0RIpwzW+oOfmHE5PMPufDG9hCfoEOMw==}
+
+  class-validator@0.15.1:
+    resolution: {integrity: sha512-LqoS80HBBSCVhz/3KloUly0ovokxpdOLR++Al3J3+dHXWt9sTKlKd4eYtoxhxyUjoe5+UcIM+5k9MIxyBWnRTw==}
 
   cli-cursor@3.1.0:
     resolution: {integrity: sha512-I/zHAwsKf9FqGoXM4WWRACob9+SNukZTd94DWF57E4toouRulbCxcUh6RKUEOQlYTHJnzkPMySvPNaaSLNfLZw==}
@@ -1411,9 +1426,9 @@ packages:
       ws:
         optional: true
 
-  graphql@17.0.2:
-    resolution: {integrity: sha512-FRWbddMxfkjiB7z+aQDWIR+E34xo9I8c9mtK2RPv8PmMzKRvrdsreHL/Ui/TmwHJfhHChEtsFPyMHKI+xuarQQ==}
-    engines: {node: ^22.0.0 || ^24.0.0 || ^25.0.0 || >=26.0.0}
+  graphql@16.14.2:
+    resolution: {integrity: sha512-Chq1s4CY7jmh8gO2qvLIJyfCDIN+EHLFW/9iShnp1z8FjBQMoodWP1kDC36VAMXXIvAjj4ARa7ntfAV2BrjsbA==}
+    engines: {node: ^12.22.0 || ^14.16.0 || ^16.0.0 || >=17.0.0}
 
   has-flag@4.0.0:
     resolution: {integrity: sha512-EykJT/Q1KjTWctppgIAgfSO0tKVuZUjhgMr17kqTumMl6Afv3EISleU7qZUzoXDFTAHTDC4NOoG/ZxU3EvlMPQ==}
@@ -1529,6 +1544,9 @@ packages:
 
   jsonc-parser@3.3.1:
     resolution: {integrity: sha512-HUgH65KyejrUFPvHFPbqOY0rsFip3Bo5wb4ngvdi1EpCYWUQDC5V+Y7mZws+DLkr4M//zQJoanu1SP+87Dv1oQ==}
+
+  libphonenumber-js@1.13.14:
+    resolution: {integrity: sha512-llihgCcx0BFLksecLP+x1J+6JDE1GsXS1RN/LoPF6qcwpeQcnjj0lcvZxY8AzbEpYwyZWPZW/nDuqkqzm3amiw==}
 
   lightningcss-android-arm64@1.33.0:
     resolution: {integrity: sha512-gEpRTalKdosp4Bb8qWtc2iOgE5SeIHlpS1up9bFq2wAyYhl1UdTObYiHe98zEM9SQvSoqQZ1IQD0JNpg3Ml5pg==}
@@ -1719,8 +1737,8 @@ packages:
     resolution: {integrity: sha512-dkEJPVvun4FryqBmZ5KhDo0K9iDXAwn08tMLDinNdRBNPcYEDiWYysLcc6k3mjTMlbP9KyylvRpd4wFtwrT9rw==}
     engines: {node: ^20.17.0 || >=22.9.0}
 
-  nanoid@3.3.19:
-    resolution: {integrity: sha512-Y2tUNy4ouw6tq5oDSKeQYGOyhkUBhNOcGV/02KC+6kd9eDGqdZd++mjMiIDilrBYvjEnCYvVtsuHCuP+okSfug==}
+  nanoid@3.3.20:
+    resolution: {integrity: sha512-uKdg2G3GNCKQn9byYOpxbGqrT2fGO5KRt5J/8b3pok8rT6qxGWF6hxMyJiEYtAf+FVyYuD9hRaDqX5uPFYJ4ZQ==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
@@ -1783,8 +1801,8 @@ packages:
     resolution: {integrity: sha512-VnK4zlqgmgq/7ZcjzCk/WpN8kKFsYGcB85Io9qT3wL4K8Un3RKmJkp793crNETieMusPMKOA4a+Mw2wbteI6TQ==}
     hasBin: true
 
-  oxlint@1.86.0:
-    resolution: {integrity: sha512-og0lhgvZfgGF//gOOmZXvtr+GmBbAGEnbEhv/QUg7UW2Wi4wHMnJbnMD+zuHgPdJxdklfgpPupdlAaAySyxrZg==}
+  oxlint@1.87.0:
+    resolution: {integrity: sha512-drxVlaW7Oqq7wSy1CN25znRu00aRq8n57Q2wniJRxCmtYVz07ufCm7EVDPQFZURrTgQIjzKrVEHAD/HcvJXObg==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
     peerDependencies:
@@ -1821,8 +1839,8 @@ packages:
     resolution: {integrity: sha512-/+5VFTchJDoVj3bhoqi6UeymcD00DAwb1nJwamzPvHEszJ4FpF6SNNbUbOS8yI56qHzdV8eK0qEfOSiodkTdxg==}
     engines: {node: '>= 0.4'}
 
-  postcss@8.5.28:
-    resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
+  postcss@8.5.29:
+    resolution: {integrity: sha512-49cGhUbXj8Qenv0iTMxA1cFBzxXoctpC9Ujd77t1WcbJIr6nF/eI7g/8MgxrYldFRuAXvja7xQRwavoW7kgrxQ==}
     engines: {node: ^10 || ^12 || >=14}
 
   prettier@3.9.9:
@@ -2125,6 +2143,10 @@ packages:
   util-deprecate@1.0.2:
     resolution: {integrity: sha512-EPD5q1uXyFxJpCrLnCc1nHnq3gOa6DZBocAIiI2TaSCA7VCJ1UJDMagCzIkXNsUYfD1daK//LTEQ8xiIbrHtcw==}
 
+  validator@13.15.35:
+    resolution: {integrity: sha512-TQ5pAGhd5whStmqWvYF4OjQROlmv9SMFVt37qoCBdqRffuuklWYQlCNnEs2ZaIBD1kZRNnikiZOS1eqgkar0iw==}
+    engines: {node: '>= 0.10'}
+
   vary@1.1.2:
     resolution: {integrity: sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg==}
     engines: {node: '>= 0.8'}
@@ -2292,9 +2314,9 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@apollo/cache-control-types@1.0.3(graphql@17.0.2)':
+  '@apollo/cache-control-types@1.0.3(graphql@16.14.2)':
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
 
   '@apollo/protobufjs@1.2.8':
     dependencies:
@@ -2311,33 +2333,33 @@ snapshots:
       '@types/long': 4.0.2
       long: 4.0.0
 
-  '@apollo/server-gateway-interface@2.0.0(graphql@17.0.2)':
+  '@apollo/server-gateway-interface@2.0.0(graphql@16.14.2)':
     dependencies:
       '@apollo/usage-reporting-protobuf': 4.1.2
       '@apollo/utils.fetcher': 3.1.0
       '@apollo/utils.keyvaluecache': 4.0.0
       '@apollo/utils.logger': 3.0.0
-      graphql: 17.0.2
+      graphql: 16.14.2
 
-  '@apollo/server@5.5.1(graphql@17.0.2)(supports-color@7.2.0)':
+  '@apollo/server@5.5.1(graphql@16.14.2)(supports-color@7.2.0)':
     dependencies:
-      '@apollo/cache-control-types': 1.0.3(graphql@17.0.2)
-      '@apollo/server-gateway-interface': 2.0.0(graphql@17.0.2)
+      '@apollo/cache-control-types': 1.0.3(graphql@16.14.2)
+      '@apollo/server-gateway-interface': 2.0.0(graphql@16.14.2)
       '@apollo/usage-reporting-protobuf': 4.1.2
       '@apollo/utils.createhash': 3.0.1
       '@apollo/utils.fetcher': 3.1.0
       '@apollo/utils.isnodelike': 3.0.0
       '@apollo/utils.keyvaluecache': 4.0.0
       '@apollo/utils.logger': 3.0.0
-      '@apollo/utils.usagereporting': 2.1.0(graphql@17.0.2)
+      '@apollo/utils.usagereporting': 2.1.0(graphql@16.14.2)
       '@apollo/utils.withrequired': 3.0.0
-      '@graphql-tools/schema': 10.1.3(graphql@17.0.2)
+      '@graphql-tools/schema': 10.1.3(graphql@16.14.2)
       async-retry: 1.3.3
       body-parser: 2.3.0(supports-color@7.2.0)
       content-type: 1.0.5
       cors: 2.8.6
       finalhandler: 2.1.1(supports-color@7.2.0)
-      graphql: 17.0.2
+      graphql: 16.14.2
       loglevel: 1.9.2
       lru-cache: 11.5.3
       negotiator: 1.1.0
@@ -2354,9 +2376,9 @@ snapshots:
       '@apollo/utils.isnodelike': 3.0.0
       sha.js: 2.4.12
 
-  '@apollo/utils.dropunuseddefinitions@2.0.1(graphql@17.0.2)':
+  '@apollo/utils.dropunuseddefinitions@2.0.1(graphql@16.14.2)':
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
 
   '@apollo/utils.fetcher@3.1.0': {}
 
@@ -2369,38 +2391,38 @@ snapshots:
 
   '@apollo/utils.logger@3.0.0': {}
 
-  '@apollo/utils.printwithreducedwhitespace@2.0.1(graphql@17.0.2)':
+  '@apollo/utils.printwithreducedwhitespace@2.0.1(graphql@16.14.2)':
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
 
-  '@apollo/utils.removealiases@2.0.1(graphql@17.0.2)':
+  '@apollo/utils.removealiases@2.0.1(graphql@16.14.2)':
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
 
-  '@apollo/utils.sortast@2.0.1(graphql@17.0.2)':
+  '@apollo/utils.sortast@2.0.1(graphql@16.14.2)':
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
       lodash.sortby: 4.7.0
 
-  '@apollo/utils.stripsensitiveliterals@2.0.1(graphql@17.0.2)':
+  '@apollo/utils.stripsensitiveliterals@2.0.1(graphql@16.14.2)':
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
 
-  '@apollo/utils.usagereporting@2.1.0(graphql@17.0.2)':
+  '@apollo/utils.usagereporting@2.1.0(graphql@16.14.2)':
     dependencies:
       '@apollo/usage-reporting-protobuf': 4.1.2
-      '@apollo/utils.dropunuseddefinitions': 2.0.1(graphql@17.0.2)
-      '@apollo/utils.printwithreducedwhitespace': 2.0.1(graphql@17.0.2)
-      '@apollo/utils.removealiases': 2.0.1(graphql@17.0.2)
-      '@apollo/utils.sortast': 2.0.1(graphql@17.0.2)
-      '@apollo/utils.stripsensitiveliterals': 2.0.1(graphql@17.0.2)
-      graphql: 17.0.2
+      '@apollo/utils.dropunuseddefinitions': 2.0.1(graphql@16.14.2)
+      '@apollo/utils.printwithreducedwhitespace': 2.0.1(graphql@16.14.2)
+      '@apollo/utils.removealiases': 2.0.1(graphql@16.14.2)
+      '@apollo/utils.sortast': 2.0.1(graphql@16.14.2)
+      '@apollo/utils.stripsensitiveliterals': 2.0.1(graphql@16.14.2)
+      graphql: 16.14.2
 
   '@apollo/utils.withrequired@3.0.0': {}
 
-  '@as-integrations/express5@1.1.2(@apollo/server@5.5.1(graphql@17.0.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0))':
+  '@as-integrations/express5@1.1.2(@apollo/server@5.5.1(graphql@16.14.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0))':
     dependencies:
-      '@apollo/server': 5.5.1(graphql@17.0.2)(supports-color@7.2.0)
+      '@apollo/server': 5.5.1(graphql@16.14.2)(supports-color@7.2.0)
       express: 5.2.1(supports-color@7.2.0)
 
   '@babel/helper-string-parser@7.29.7': {}
@@ -2423,51 +2445,51 @@ snapshots:
   '@colors/colors@1.5.0':
     optional: true
 
-  '@graphql-tools/merge@9.2.4(graphql@17.0.2)':
+  '@graphql-tools/merge@9.2.4(graphql@16.14.2)':
     dependencies:
-      '@graphql-tools/utils': 12.0.1(graphql@17.0.2)
-      graphql: 17.0.2
+      '@graphql-tools/utils': 12.0.1(graphql@16.14.2)
+      graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-tools/merge@9.2.6(graphql@17.0.2)':
+  '@graphql-tools/merge@9.2.6(graphql@16.14.2)':
     dependencies:
-      '@graphql-tools/utils': 12.0.3(graphql@17.0.2)
-      graphql: 17.0.2
+      '@graphql-tools/utils': 12.0.3(graphql@16.14.2)
+      graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-tools/schema@10.1.1(graphql@17.0.2)':
+  '@graphql-tools/schema@10.1.1(graphql@16.14.2)':
     dependencies:
-      '@graphql-tools/merge': 9.2.4(graphql@17.0.2)
-      '@graphql-tools/utils': 12.0.1(graphql@17.0.2)
-      graphql: 17.0.2
+      '@graphql-tools/merge': 9.2.4(graphql@16.14.2)
+      '@graphql-tools/utils': 12.0.1(graphql@16.14.2)
+      graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-tools/schema@10.1.3(graphql@17.0.2)':
+  '@graphql-tools/schema@10.1.3(graphql@16.14.2)':
     dependencies:
-      '@graphql-tools/merge': 9.2.6(graphql@17.0.2)
-      '@graphql-tools/utils': 12.0.3(graphql@17.0.2)
-      graphql: 17.0.2
+      '@graphql-tools/merge': 9.2.6(graphql@16.14.2)
+      '@graphql-tools/utils': 12.0.3(graphql@16.14.2)
+      graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-tools/utils@12.0.1(graphql@17.0.2)':
+  '@graphql-tools/utils@12.0.1(graphql@16.14.2)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@17.0.2)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.14.2)
       '@whatwg-node/promise-helpers': 1.3.2
       cross-inspect: 1.0.1
-      graphql: 17.0.2
+      graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-tools/utils@12.0.3(graphql@17.0.2)':
+  '@graphql-tools/utils@12.0.3(graphql@16.14.2)':
     dependencies:
-      '@graphql-typed-document-node/core': 3.2.0(graphql@17.0.2)
+      '@graphql-typed-document-node/core': 3.2.0(graphql@16.14.2)
       '@whatwg-node/promise-helpers': 2.0.0
       cross-inspect: 1.0.1
-      graphql: 17.0.2
+      graphql: 16.14.2
       tslib: 2.8.1
 
-  '@graphql-typed-document-node/core@3.2.0(graphql@17.0.2)':
+  '@graphql-typed-document-node/core@3.2.0(graphql@16.14.2)':
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
 
   '@inquirer/ansi@2.0.9': {}
 
@@ -2599,18 +2621,18 @@ snapshots:
 
   '@lukeed/csprng@1.1.0': {}
 
-  '@nestjs/apollo@14.0.3(@apollo/server@5.5.1(graphql@17.0.2)(supports-color@7.2.0))(@as-integrations/express5@1.1.2(@apollo/server@5.5.1(graphql@17.0.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0)))(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(@nestjs/graphql@14.0.3(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(graphql@17.0.2)(reflect-metadata@0.2.2)(typescript@6.0.3))(graphql@17.0.2)':
+  '@nestjs/apollo@14.0.3(@apollo/server@5.5.1(graphql@16.14.2)(supports-color@7.2.0))(@as-integrations/express5@1.1.2(@apollo/server@5.5.1(graphql@16.14.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0)))(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(@nestjs/graphql@14.0.3(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(class-transformer@0.5.1)(class-validator@0.15.1)(graphql@16.14.2)(reflect-metadata@0.2.2)(typescript@6.0.3))(graphql@16.14.2)':
     dependencies:
-      '@apollo/server': 5.5.1(graphql@17.0.2)(supports-color@7.2.0)
-      '@nestjs/common': 12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
-      '@nestjs/core': 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/graphql': 14.0.3(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(graphql@17.0.2)(reflect-metadata@0.2.2)(typescript@6.0.3)
-      graphql: 17.0.2
+      '@apollo/server': 5.5.1(graphql@16.14.2)(supports-color@7.2.0)
+      '@nestjs/common': 12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
+      '@nestjs/core': 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/graphql': 14.0.3(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(class-transformer@0.5.1)(class-validator@0.15.1)(graphql@16.14.2)(reflect-metadata@0.2.2)(typescript@6.0.3)
+      graphql: 16.14.2
       iterall: 1.3.0
       lodash.omit: 4.18.0
       tslib: 2.8.1
     optionalDependencies:
-      '@as-integrations/express5': 1.1.2(@apollo/server@5.5.1(graphql@17.0.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0))
+      '@as-integrations/express5': 1.1.2(@apollo/server@5.5.1(graphql@16.14.2)(supports-color@7.2.0))(express@5.2.1(supports-color@7.2.0))
 
   '@nestjs/cli@12.0.8(@types/node@24.19.1)(prettier@3.9.9)':
     dependencies:
@@ -2633,7 +2655,7 @@ snapshots:
       - '@types/node'
       - prettier
 
-  '@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)':
+  '@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)':
     dependencies:
       '@standard-schema/spec': 1.1.0
       file-type: 22.1.1(supports-color@7.2.0)
@@ -2643,12 +2665,15 @@ snapshots:
       rxjs: 7.8.2
       tslib: 2.8.1
       uid: 2.0.2
+    optionalDependencies:
+      class-transformer: 0.5.1
+      class-validator: 0.15.1
     transitivePeerDependencies:
       - supports-color
 
-  '@nestjs/core@12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
+  '@nestjs/core@12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)':
     dependencies:
-      '@nestjs/common': 12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
+      '@nestjs/common': 12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
       fast-safe-stringify: 2.1.1
       iterare: 1.2.1
       path-to-regexp: 8.4.2
@@ -2657,27 +2682,29 @@ snapshots:
       tslib: 2.8.1
       uid: 2.0.2
     optionalDependencies:
-      '@nestjs/platform-express': 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(supports-color@7.2.0)
+      '@nestjs/platform-express': 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(supports-color@7.2.0)
 
-  '@nestjs/graphql@14.0.3(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(graphql@17.0.2)(reflect-metadata@0.2.2)(typescript@6.0.3)':
+  '@nestjs/graphql@14.0.3(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(class-transformer@0.5.1)(class-validator@0.15.1)(graphql@16.14.2)(reflect-metadata@0.2.2)(typescript@6.0.3)':
     dependencies:
-      '@graphql-tools/merge': 9.2.4(graphql@17.0.2)
-      '@graphql-tools/schema': 10.1.1(graphql@17.0.2)
-      '@graphql-tools/utils': 12.0.1(graphql@17.0.2)
-      '@nestjs/common': 12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
-      '@nestjs/core': 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
-      '@nestjs/mapped-types': 12.0.0(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(reflect-metadata@0.2.2)
+      '@graphql-tools/merge': 9.2.4(graphql@16.14.2)
+      '@graphql-tools/schema': 10.1.1(graphql@16.14.2)
+      '@graphql-tools/utils': 12.0.1(graphql@16.14.2)
+      '@nestjs/common': 12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
+      '@nestjs/core': 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/mapped-types': 12.0.0(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)
       chokidar: 4.0.3
       es-toolkit: 1.52.0
-      graphql: 17.0.2
-      graphql-tag: 2.12.7(graphql@17.0.2)
-      graphql-ws: 6.3.0(graphql@17.0.2)(ws@8.22.0)
+      graphql: 16.14.2
+      graphql-tag: 2.12.7(graphql@16.14.2)
+      graphql-ws: 6.3.0(graphql@16.14.2)(ws@8.22.0)
       normalize-path: 3.0.0
       reflect-metadata: 0.2.2
       tinyglobby: 0.2.17
       tslib: 2.8.1
       ws: 8.22.0
     optionalDependencies:
+      class-transformer: 0.5.1
+      class-validator: 0.15.1
       typescript: 6.0.3
     transitivePeerDependencies:
       - '@fastify/websocket'
@@ -2685,10 +2712,13 @@ snapshots:
       - crossws
       - utf-8-validate
 
-  '@nestjs/mapped-types@12.0.0(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(reflect-metadata@0.2.2)':
+  '@nestjs/mapped-types@12.0.0(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)':
     dependencies:
-      '@nestjs/common': 12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
+      '@nestjs/common': 12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
       reflect-metadata: 0.2.2
+    optionalDependencies:
+      class-transformer: 0.5.1
+      class-validator: 0.15.1
 
   '@nestjs/mau@0.2.8':
     dependencies:
@@ -2700,10 +2730,10 @@ snapshots:
       ora: 5.4.1
       undici: 6.20.1
 
-  '@nestjs/platform-express@12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(supports-color@7.2.0)':
+  '@nestjs/platform-express@12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(supports-color@7.2.0)':
     dependencies:
-      '@nestjs/common': 12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
-      '@nestjs/core': 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
+      '@nestjs/core': 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       cors: 2.8.6
       express: 5.2.1(supports-color@7.2.0)
       multer: 2.4.0
@@ -2725,13 +2755,13 @@ snapshots:
     transitivePeerDependencies:
       - chokidar
 
-  '@nestjs/testing@12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(@nestjs/platform-express@12.1.2)':
+  '@nestjs/testing@12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(@nestjs/platform-express@12.1.2)':
     dependencies:
-      '@nestjs/common': 12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
-      '@nestjs/core': 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
+      '@nestjs/common': 12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0)
+      '@nestjs/core': 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/platform-express@12.1.2)(reflect-metadata@0.2.2)(rxjs@7.8.2)
       tslib: 2.8.1
     optionalDependencies:
-      '@nestjs/platform-express': 12.1.2(@nestjs/common@12.1.2(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(supports-color@7.2.0)
+      '@nestjs/platform-express': 12.1.2(@nestjs/common@12.1.2(class-transformer@0.5.1)(class-validator@0.15.1)(reflect-metadata@0.2.2)(rxjs@7.8.2)(supports-color@7.2.0))(@nestjs/core@12.1.2)(supports-color@7.2.0)
 
   '@noble/hashes@1.8.0': {}
 
@@ -2755,61 +2785,61 @@ snapshots:
   '@oxlint-tsgolint/win32-x64@7.0.2003':
     optional: true
 
-  '@oxlint/binding-android-arm-eabi@1.86.0':
+  '@oxlint/binding-android-arm-eabi@1.87.0':
     optional: true
 
-  '@oxlint/binding-android-arm64@1.86.0':
+  '@oxlint/binding-android-arm64@1.87.0':
     optional: true
 
-  '@oxlint/binding-darwin-arm64@1.86.0':
+  '@oxlint/binding-darwin-arm64@1.87.0':
     optional: true
 
-  '@oxlint/binding-darwin-x64@1.86.0':
+  '@oxlint/binding-darwin-x64@1.87.0':
     optional: true
 
-  '@oxlint/binding-freebsd-x64@1.86.0':
+  '@oxlint/binding-freebsd-x64@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-arm-gnueabihf@1.86.0':
+  '@oxlint/binding-linux-arm-gnueabihf@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-arm-musleabihf@1.86.0':
+  '@oxlint/binding-linux-arm-musleabihf@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-arm64-gnu@1.86.0':
+  '@oxlint/binding-linux-arm64-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-arm64-musl@1.86.0':
+  '@oxlint/binding-linux-arm64-musl@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-ppc64-gnu@1.86.0':
+  '@oxlint/binding-linux-ppc64-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-riscv64-gnu@1.86.0':
+  '@oxlint/binding-linux-riscv64-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-riscv64-musl@1.86.0':
+  '@oxlint/binding-linux-riscv64-musl@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-s390x-gnu@1.86.0':
+  '@oxlint/binding-linux-s390x-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-x64-gnu@1.86.0':
+  '@oxlint/binding-linux-x64-gnu@1.87.0':
     optional: true
 
-  '@oxlint/binding-linux-x64-musl@1.86.0':
+  '@oxlint/binding-linux-x64-musl@1.87.0':
     optional: true
 
-  '@oxlint/binding-openharmony-arm64@1.86.0':
+  '@oxlint/binding-openharmony-arm64@1.87.0':
     optional: true
 
-  '@oxlint/binding-win32-arm64-msvc@1.86.0':
+  '@oxlint/binding-win32-arm64-msvc@1.87.0':
     optional: true
 
-  '@oxlint/binding-win32-ia32-msvc@1.86.0':
+  '@oxlint/binding-win32-ia32-msvc@1.87.0':
     optional: true
 
-  '@oxlint/binding-win32-x64-msvc@1.86.0':
+  '@oxlint/binding-win32-x64-msvc@1.87.0':
     optional: true
 
   '@paralleldrive/cuid2@2.3.1':
@@ -2965,6 +2995,8 @@ snapshots:
     dependencies:
       '@types/methods': 1.1.4
       '@types/superagent': 8.1.11
+
+  '@types/validator@13.15.10': {}
 
   '@vitest/coverage-v8@4.1.11(vitest@4.1.11)':
     dependencies:
@@ -3163,6 +3195,14 @@ snapshots:
   chokidar@5.0.0:
     dependencies:
       readdirp: 5.1.1
+
+  class-transformer@0.5.1: {}
+
+  class-validator@0.15.1:
+    dependencies:
+      '@types/validator': 13.15.10
+      libphonenumber-js: 1.13.14
+      validator: 13.15.35
 
   cli-cursor@3.1.0:
     dependencies:
@@ -3444,18 +3484,18 @@ snapshots:
 
   gopd@1.2.0: {}
 
-  graphql-tag@2.12.7(graphql@17.0.2):
+  graphql-tag@2.12.7(graphql@16.14.2):
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
       tslib: 2.8.1
 
-  graphql-ws@6.3.0(graphql@17.0.2)(ws@8.22.0):
+  graphql-ws@6.3.0(graphql@16.14.2)(ws@8.22.0):
     dependencies:
-      graphql: 17.0.2
+      graphql: 16.14.2
     optionalDependencies:
       ws: 8.22.0
 
-  graphql@17.0.2: {}
+  graphql@16.14.2: {}
 
   has-flag@4.0.0: {}
 
@@ -3559,6 +3599,8 @@ snapshots:
   json5@2.2.3: {}
 
   jsonc-parser@3.3.1: {}
+
+  libphonenumber-js@1.13.14: {}
 
   lightningcss-android-arm64@1.33.0:
     optional: true
@@ -3697,7 +3739,7 @@ snapshots:
 
   mute-stream@3.0.0: {}
 
-  nanoid@3.3.19: {}
+  nanoid@3.3.20: {}
 
   negotiator@1.1.0:
     dependencies:
@@ -3775,27 +3817,27 @@ snapshots:
       '@oxlint-tsgolint/win32-arm64': 7.0.2003
       '@oxlint-tsgolint/win32-x64': 7.0.2003
 
-  oxlint@1.86.0(oxlint-tsgolint@7.0.2003):
+  oxlint@1.87.0(oxlint-tsgolint@7.0.2003):
     optionalDependencies:
-      '@oxlint/binding-android-arm-eabi': 1.86.0
-      '@oxlint/binding-android-arm64': 1.86.0
-      '@oxlint/binding-darwin-arm64': 1.86.0
-      '@oxlint/binding-darwin-x64': 1.86.0
-      '@oxlint/binding-freebsd-x64': 1.86.0
-      '@oxlint/binding-linux-arm-gnueabihf': 1.86.0
-      '@oxlint/binding-linux-arm-musleabihf': 1.86.0
-      '@oxlint/binding-linux-arm64-gnu': 1.86.0
-      '@oxlint/binding-linux-arm64-musl': 1.86.0
-      '@oxlint/binding-linux-ppc64-gnu': 1.86.0
-      '@oxlint/binding-linux-riscv64-gnu': 1.86.0
-      '@oxlint/binding-linux-riscv64-musl': 1.86.0
-      '@oxlint/binding-linux-s390x-gnu': 1.86.0
-      '@oxlint/binding-linux-x64-gnu': 1.86.0
-      '@oxlint/binding-linux-x64-musl': 1.86.0
-      '@oxlint/binding-openharmony-arm64': 1.86.0
-      '@oxlint/binding-win32-arm64-msvc': 1.86.0
-      '@oxlint/binding-win32-ia32-msvc': 1.86.0
-      '@oxlint/binding-win32-x64-msvc': 1.86.0
+      '@oxlint/binding-android-arm-eabi': 1.87.0
+      '@oxlint/binding-android-arm64': 1.87.0
+      '@oxlint/binding-darwin-arm64': 1.87.0
+      '@oxlint/binding-darwin-x64': 1.87.0
+      '@oxlint/binding-freebsd-x64': 1.87.0
+      '@oxlint/binding-linux-arm-gnueabihf': 1.87.0
+      '@oxlint/binding-linux-arm-musleabihf': 1.87.0
+      '@oxlint/binding-linux-arm64-gnu': 1.87.0
+      '@oxlint/binding-linux-arm64-musl': 1.87.0
+      '@oxlint/binding-linux-ppc64-gnu': 1.87.0
+      '@oxlint/binding-linux-riscv64-gnu': 1.87.0
+      '@oxlint/binding-linux-riscv64-musl': 1.87.0
+      '@oxlint/binding-linux-s390x-gnu': 1.87.0
+      '@oxlint/binding-linux-x64-gnu': 1.87.0
+      '@oxlint/binding-linux-x64-musl': 1.87.0
+      '@oxlint/binding-openharmony-arm64': 1.87.0
+      '@oxlint/binding-win32-arm64-msvc': 1.87.0
+      '@oxlint/binding-win32-ia32-msvc': 1.87.0
+      '@oxlint/binding-win32-x64-msvc': 1.87.0
       oxlint-tsgolint: 7.0.2003
 
   parseurl@1.3.3: {}
@@ -3812,9 +3854,9 @@ snapshots:
 
   possible-typed-array-names@1.1.0: {}
 
-  postcss@8.5.28:
+  postcss@8.5.29:
     dependencies:
-      nanoid: 3.3.19
+      nanoid: 3.3.20
       picocolors: 1.1.1
       source-map-js: 1.2.2
 
@@ -4144,6 +4186,8 @@ snapshots:
 
   util-deprecate@1.0.2: {}
 
+  validator@13.15.35: {}
+
   vary@1.1.2: {}
 
   vite-tsconfig-paths@5.1.4(supports-color@7.2.0)(typescript@6.0.3)(vite@8.3.2(@types/node@24.19.1)):
@@ -4161,7 +4205,7 @@ snapshots:
     dependencies:
       lightningcss: 1.33.0
       picomatch: 4.0.7
-      postcss: 8.5.28
+      postcss: 8.5.29
       rolldown: 1.2.12
       tinyglobby: 0.2.17
     optionalDependencies:

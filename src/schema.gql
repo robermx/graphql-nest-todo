@@ -2,6 +2,18 @@
 # THIS FILE WAS AUTOMATICALLY GENERATED (DO NOT MODIFY)
 # ------------------------------------------------------
 
+type Todo {
+  id: Int!
+  description: String!
+  done: Boolean!
+}
+
+type AggregationType {
+  total: Int!
+  pending: Int!
+  completed: Int!
+}
+
 type Query {
   """Returns a hello world"""
   helloWorld: String!
@@ -11,4 +23,54 @@ type Query {
 
   """Returns a number between 0 and args value"""
   randomFromZeroTo(to: Int): Int!
+
+  """returns a list of todos."""
+  todos(
+    """Status filter"""
+    status: Boolean
+  ): [Todo!]!
+
+  """returns just one todo with an specified ID."""
+  todo(id: Int): Todo!
+
+  """Returns length of total todos"""
+  totalTodos: Int! @deprecated(reason: "Use aggregations query instead.")
+
+  """Returns length of completed todos"""
+  completedTodos: Int! @deprecated(reason: "Use aggregations query instead.")
+
+  """Returns length of pending todos"""
+  pendingTodos: Int! @deprecated(reason: "Use aggregations query instead.")
+
+  """
+  Returns a group of the total and status of completed and pending todos.
+  """
+  aggregations: AggregationType!
+}
+
+type Mutation {
+  """Adds a new todo."""
+  createTodo(createTodoInput: CreateTodoInput!): Todo!
+
+  """Updates a todo through an ID."""
+  updateTodo(updateTodoInput: UpdateTodoInput!): Todo!
+
+  """Removes a todo through an ID."""
+  removeTodo(id: Int!): Todo!
+}
+
+input CreateTodoInput {
+  """Create a todo description"""
+  description: String!
+}
+
+input UpdateTodoInput {
+  """This ID is an integer"""
+  id: Int!
+
+  """A Task that needs to be done"""
+  description: String
+
+  """When a todo is completed"""
+  done: Boolean
 }
